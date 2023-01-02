@@ -62,7 +62,7 @@ class _ULX3SPlatform(LatticeECP5Platform):
             Subsignal("cipo", Pins("V2", dir="i")),
             Subsignal("hold", PinsN("W1", dir="o")),
             Subsignal("wp",   PinsN("Y2", dir="o")),
-            Attrs(PULLMODE="NONE", DRIVE="4", IO_TYPE="LVCMOS33")
+            Attrs(PULLMODE="UP", DRIVE="4", IO_TYPE="LVCMOS33")
         ),
 
         SDRAMResource(0,
